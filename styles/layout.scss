@@ -1,0 +1,56 @@
+@use "./functions" as f;
+
+.hero{
+    background: url("https://s3-alpha-sig.figma.com/img/ebd1/10d2/3eed16e77028dca771dbb8382ad6b9c3?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W9dS~OGC2Fpnu-SzuDi4NcgUVUgmVzNHwXWIQF7Kv-DLNWvnaQ8PY4Eh9Og4Rs~QILzPmI6yPek01B9Eq2IwevgNL2T6J3ZEclW6VTVEeQdc8xQsTmYDyhe4bPFXCm2eUz6byR9b-QV~Ege5vyfWAhj1PGIQfDh7e-s9m8INQNOOlMopNGe~yuUY-UQvNKJWNTOpX4r6HVPeIAe~mNNrJRpxa2lbkZF9WGyzDJwPvF1TIzzcz05pzFfxeXIQjhZh5GGHmSHVlWl6cngQWVXIY03zOgIFc~0RJBtHxGXWwXwtTomvV1xlCqknQOtXRkpVsGM2rSdF65Xu-tdiMiBHhw__");
+    background-size: cover;
+    background-color: lightgray;
+    background-position: center;
+    height: calc(100vh - 81px);
+    @include f.flex-center
+}
+
+.hero__preview{
+    width: 90%;
+    max-width: 730px;
+    text-align: center;
+    padding: 40px 24px;
+    @include f.flex-column(center,center);
+    gap: 35px;
+}
+
+.hero__information{
+    @include f.flex-column(center,center);
+    line-height: 25.6px;
+    max-width: 537px;
+    gap: 12px;
+}
+
+// ? Seccion galeria
+
+.gallery-products{
+    @include f.flex-column;
+    margin: 0 auto;
+    width: 90%;
+    padding-block-start: 50px;
+    text-align: center;
+    gap: 54px;
+
+    @include f.media(desktop){
+        padding-block-start: 90px;
+    }
+}
+
+#gallery-products{
+    @include f.flex(row,center,center);
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.benefits{
+    padding-top: 80px;
+}
+
+.testimonials{
+    text-align: center;
+    padding-block-start: 80px;
+}

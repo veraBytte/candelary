@@ -1,0 +1,45 @@
+@use "../functions" as f;
+@use "./icons.scss";
+
+.header{
+    @include f.flex(row,space-between,center);
+    max-width: 1047px;
+    margin: 0 auto;
+}
+
+.header__nav--options{
+    display: none
+}
+
+.navigation__options-list{
+    @include f.flex(row,space-between,center);
+    gap: 6px;
+}
+
+.options-list--item{
+    padding-inline: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.header__nav{
+    @include f.flex(row,space-between,center);
+    padding: 20px 25px;
+    width: 100%;
+
+    @include f.media(desktop){
+
+        .header__hamburger-menu{
+            display: none
+        }
+
+        .header__nav--options{
+            display: block
+        }
+    }
+}
+
+.header__user-options{
+    @include f.flex;
+    gap: 15px;
+}

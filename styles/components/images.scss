@@ -1,0 +1,5 @@
+@use "../functions" as f;
+
+.image_one_to_one{
+    @include f.img-size;
+}

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__hamburger-menu">
+          <img class="icon" src="./assets/icons/hamburger-menu.svg" alt="Boton hamburguesa para cceder al menu mobile">
+        </div>
+        <div class="header__logo">
+          <img class="logo__img" src="./assets/binary/logo.webp" alt="Logo del aplicativo web">
+        </div>
+        <div class="header__nav--options">
+          <nav>
+            <ul class="navigation__options-list">
+              <li class="options-list--item">Discovery</li>
+              <li class="options-list--item">About</li>
+              <li class="options-list--item">Contact us</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__user-options">
+          <img class="icon" src="./assets/icons/profile.png" alt="Icono para acceder a la cuenta del usuario">
+          <img class="icon" src="./assets/icons/cart.png" alt="Icono para acceder al carrito de compras">
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <article class="hero__preview modal">
+          <div class="hero__information">
+            <h2 class="hero__title">🌱 <br> The nature candle</h2>
+            <p class="hero__description">All handmade with natural soy wax, Candleaf is a companion for all your pleasure moments </p>
+          </div>
+          <button class="button--green">Discovery our collection</button>
+        </article>
+      </section>
+
+      <section class="gallery-products">
+        <div>
+          <h2>Products</h2>
+          <p>Order it for you or for your beloved ones </p>
+        </div>
+        <article id="gallery-products">
+        </article>
+        <button id="see-more" class="button--green">See more</button>
+      </section>
+
+      <section class="benefits">
+        <div class="benefits__info-section">
+          <h2>Clean and fragrant soy wax</h2>
+          <p class="gr-text">Made for your home and for your wellness</p>
+        </div>
+        <article class="benefits__details">
+          <img class="image_one_to_one" src="./assets/binary/image.webp" alt="">
+          <div class="benefits__details w500">
+            <p>Eco-sustainable:All recyclable materials, 0% CO2 emissions</p>
+            <p>Hyphoallergenic: 100% natural, human friendly ingredients </p>
+            <p>Handmade: All candles are craftly made with love.</p>
+            <p>Long burning: No more waste. Created for last long.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="testimonials">
+        <h2>Testimonials</h2>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <!-- Contenido del pie de página -->
+    </footer>
+    <script type="module" defer src="/main.js"></script>
+  </body>
+</html>

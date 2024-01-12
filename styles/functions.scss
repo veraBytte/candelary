@@ -1,0 +1,63 @@
+@mixin flex($direction: row, $justify: flex-start, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+  }
+  
+  @mixin flex-center {
+    @include flex(row, center, center);
+  }
+  
+  @mixin flex-column($justify: flex-start, $align: center) {
+    @include flex(column, $justify, $align);
+  }
+
+  // Mixin para generar media queries
+@mixin media($breakpoint) {
+    @if $breakpoint == 'phone' {
+      @media (max-width: 599px) { @content; }
+    }
+    @else if $breakpoint == 'tablet' {
+      @media (min-width: 600px) and (max-width: 1199px) { @content; }
+    }
+    @else if $breakpoint == 'desktop' {
+      @media (min-width: 1200px) { @content; }
+    }
+  }
+  
+  // Mixin para generar transiciones
+  @mixin transition($properties: all, $duration: 0.3s, $timing: ease) {
+    transition: $properties $duration $timing;
+  }
+  
+  // Mixin para generar sombras de caja
+  @mixin box-shadow($x: 0, $y: 0, $blur: 0, $spread: 0, $color: black) {
+    box-shadow: $x $y $blur $spread $color;
+  }
+  
+  // Mixin para generar gradientes lineales
+  @mixin linear-gradient($direction, $color-start, $color-end) {
+    background: $color-start;
+    background: linear-gradient($direction, $color-start, $color-end);
+  }
+
+  @mixin invert-colors($color1, $color2) {
+    background-color: $color2;
+    color: $color1;
+    border: solid 1px $color1;
+  }
+
+  @mixin icon-size($width, $height: $width) {
+    width: $width;
+    height: $height;
+  }
+
+  @mixin img-size($aspect-ratio:1/1, $width:100%, $max-width:350px){
+    object-fit: cover;
+    margin: 0 auto;
+    max-width: $max-width;
+    aspect-ratio: $aspect-ratio;
+    width: $width;
+    height: auto;
+  }

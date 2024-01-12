@@ -1,0 +1,51 @@
+@use "../functions" as f;
+
+.product-card{
+    aspect-ratio: 16/9;
+    width: 100%;
+    max-width: 350px;
+    @include f.box-shadow(3px, 3px, 10px, 0px, #cccccc);
+
+    @include f.media(desktop){
+        aspect-ratio: 1/1;
+        max-width: 300px;
+    }
+}
+
+.product-image{
+    min-width: 100%;    
+    height: 70%;
+    object-fit: cover;
+    background-color: lightblue;
+
+    @include f.media(desktop){
+        aspect-ratio: 1/1;
+        height: 80%;
+    }
+}
+
+.product-title{
+    text-align: start;
+    padding: 16px 8px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 17.63px; /* 110.189% */
+    letter-spacing: -0.575px;
+}
+
+.product-price{
+    @extend .product-title;
+    text-align: end;
+    padding-block: 0;
+}
+
+.benefits__info-section{
+    text-align: center;
+}
+
+.benefits__details{
+    @include f.flex-column;
+    width: 90%;
+    margin: 0 auto;
+    gap: 12px;
+}

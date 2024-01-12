@@ -1,0 +1,25 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+:root{
+    font-family: 'Poppins', sans-serif;
+
+    --sf: 'Open Sans', sans-serif; 
+
+    --primary: #56B280;
+    --black: #272727;
+    --white: #FFFFFF; 
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+button{
+   border: none;
+}
+

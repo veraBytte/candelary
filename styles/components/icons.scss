@@ -1,0 +1,12 @@
+@use "../functions" as f;
+
+.icon{
+    @include f.icon-size(32px);
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.logo__img{
+    height: 33px;
+}
